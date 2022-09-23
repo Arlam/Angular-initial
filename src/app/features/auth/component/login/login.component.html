@@ -1,0 +1,15 @@
+<div class="main-wrapper" fxLayout="column" fxLayoutAlign="center center">
+  <form class="login-form" [formGroup]="formGroup" (ngSubmit)="login()" fxLayout="column">
+    <div>Sign In</div>
+
+    <mat-form-field class="full-width">
+      <input formControlName="username" matInput type="text" placeholder="Username">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <input formControlName="password" matInput type="password" placeholder="Password">
+    </mat-form-field>
+    <button mat-stroked-button color="primary" class="btn-block">Sign-in</button>
+  </form>
+  <div *ngIf="error" class="alert alert-danger mt-3 mb-0">{{error}}</div>
+</div>
