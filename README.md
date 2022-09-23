@@ -2,8 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
-The purpose of the template is to speed up a project when it starts. It contains basic features that aare used by almost all projects I have been working on. 
-It has everything to help with security implementation, contains simple docker file and simple proxy configuration 
+The purpose of the template is to speed up a development process on a new project. 
+Common interceptors are configured in the project.
+It contains basic features that are used by almost all projects I have been working on. 
+It has everything to help with security implementation including jwt library, 
+contains simple docker file and simple proxy configuration.
+The project already have angular material and angular flex-layout dependencies. 
+
+There are still areas to be covered:
+- Unit tests
+- Token refresh
+- Password reset
+- ...
 
 ## Development server
 

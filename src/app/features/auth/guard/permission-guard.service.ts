@@ -10,7 +10,7 @@ export class PermissionGuard implements CanActivate {
   constructor(private router: Router, private currentUserService: CurrentUserService) {}
 
   canActivate(route: ActivatedRouteSnapshot): boolean | UrlTree {
-    const permissions: Permission[] = route.data.permissions;
+    const permissions: Permission[] = route.data['permissions'];
     if (this.currentUserService.hasAnyPermission(permissions)) {
       return true;
     }
