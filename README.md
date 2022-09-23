@@ -11,6 +11,7 @@ The project already have angular material and angular flex-layout dependencies.
 
 There are still areas to be covered:
 - Unit tests
+- logging
 - Token refresh
 - Password reset
 - ...

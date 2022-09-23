@@ -1,20 +1,24 @@
 import { Injectable } from '@angular/core';
 import {
-    HttpEvent,
-    HttpHandler,
-    HttpHeaderResponse,
-    HttpInterceptor,
-    HttpRequest,
-    HttpResponse,
+  HttpEvent,
+  HttpHandler,
+  HttpHeaderResponse,
+  HttpInterceptor,
+  HttpRequest,
+  HttpResponse,
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { CurrentUser } from '@app/features/auth/model/current-user';
+import { Permission } from '@app/features/auth/model/permission';
 
 const USERS: CurrentUser[] = [
     {
         id: 1,
         username: 'first',
-        permissions: []
+        permissions: [
+          // Permission.SEE_RED,
+          Permission.SEE_GREEN,
+        ]
     }
 ];
 
