@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
+The purpose of the template is to speed up a project when it starts. It contains basic features that aare used by almost all projects I have been working on. 
+It has everything to help with security implementation, contains simple docker file and simple proxy configuration 
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
